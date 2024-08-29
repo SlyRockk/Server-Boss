@@ -6,7 +6,7 @@
 ![thumbnail small](https://github.com/user-attachments/assets/462780c2-a77d-4760-9ff7-e4e0f334e813)
 
 
-A server manager for Team Fortress 2 designed to make the process of setting up a server as easy and simple as possible, while also being flexible and customizable.
+Server Boss is a server manager for Team Fortress 2 designed to make the process of setting up a tf2 server as easy and simple as possible, while also being flexible and customizable.
 
 ![AutoHotkey_ZCCUyrY6E0](https://github.com/user-attachments/assets/8071ff38-c363-40c6-93ba-1e813a882cad)
 
