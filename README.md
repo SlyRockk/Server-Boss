@@ -34,7 +34,7 @@ If you already have server setup then copy all files from the realease to the fo
 
 ## How to compile
 - Download this repository
-- Download Autohotkey v1.1 (deprecated) from here [Here](https://www.autohotkey.com/)
+- Download Autohotkey v1.1 (deprecated) from [www.autohotkey.com](https://www.autohotkey.com/)
 - Install the program
 - Right click on `Server Boss v0.1.ahk` and select Compile Script (GUI)...
 - Change the Base File (.bin, .exe) to v1.1.37.02 U64 AutoHotkeyU64.exe
