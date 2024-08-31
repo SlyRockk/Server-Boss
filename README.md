@@ -37,7 +37,7 @@ If you already have server setup then copy all files from the realease to the fo
 - Download Autohotkey v1.1 (deprecated) from [www.autohotkey.com](https://www.autohotkey.com/)
 - Install the program
 - Right click on `Server Boss v0.1.ahk` and select Compile Script (GUI)...
-- Change the Base File (.bin, .exe) to v1.1.37.02 U64 AutoHotkeyU64.exe
+- Change the Base File (.bin, .exe) to `v1.1.37.02 U64 Unicode 64-bit.bin`
 - Press compile
   
 ## License
