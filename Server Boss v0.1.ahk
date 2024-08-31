@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -9,7 +9,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;---------------------------------------------------------------------------------------
 ;Server Boss v0.1 - Alpha
 ;Date created: 19.08.2024
-;Last edit: 29.08.2024
+;Last edit: 31.08.2024
 ;Made by: SlyRockk
 ;Latest changes:
 ;Bugs: DPI scale doesn't work properly if set to 125%
@@ -1033,11 +1033,13 @@ If WinExist("ahk_exe srcds_win64.exe")
 	{
 		WinShow, ahk_exe srcds_win64.exe
 		WinActivate, ahk_exe srcds_win64.exe
+		SetTimer, checkIFconClosed, 1000
 		toggleSrcdsConsole := 1
 	}
 	else if (toggleSrcdsConsole = 1)
 	{
 		WinHide, ahk_exe srcds_win64.exe
+		SetTimer, checkIFconClosed, delete
 		toggleSrcdsConsole := 0
 	}
 }
@@ -1054,3 +1056,10 @@ hideTooltip:
 ToolTip
 return
 
+checkIFconClosed:
+If !WinExist("ahk_exe srcds_win64.exe")
+{
+	gosub, StartServer
+	SetTimer, checkIFconClosed, delete
+}
+return
