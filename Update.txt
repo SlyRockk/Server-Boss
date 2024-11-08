@@ -1,1 +1,74 @@
 Server Boss v0.2.0
+
+[THE UPDATE ISN'T READY JUST YET. THIS TXT FILE IS CURRENTLY USED FOR TESTING!]
+Major update
+
+New features:
+- Added map cycle support
+- Workshop maps will automatically be scanned by server boss on startup
+- Added support for .zip, .smx, .dem, .bmp files
+- Added search bar for maps
+- Added add/remove button for maps
+- Added add button for images(the map image is the button)
+- Improved menu tray
+- Added server start/close/restrat schedule support
+- Added support for replays, sourcetv, fastdl, server token
+- Improved advanced tab
+- Added new warning window for exceeded net_maxfilesize limit
+- Added support for workshop maps
+- Added new [experimental] feature - smart download
+- Added support for multi-server hosting
+- Server boss can now use map id's for hosting(removes the need for fastDL on all steam workshop maps)
+- Improved console speed
+- Console now has less flickering
+- Improved bots control UI
+- Added nav_generate support(for fixing maps with idle bots)
+- Added support for fetching Private/Public/fakeIP
+- Server password will now be copied automatically to the clipboard
+- All custom buttons now give feedback when pressed
+- Ctrl+Scroll Wheel up/down now change the console size
+- Added color wheel for changing console color
+- Console font can now be changed
+- Freeze cmd button is replaced with a checkbox
+- The console window will now become readonly when freeze cmd is on
+- Added console history(server boss will remember all send inputs and store them to be reused in the console history window)
+- Added [experimental feature] Chat react
+- Added [experimental feature] Command scheduler
+- Users can now save console commands
+- Added new map control window
+- Added new server demo record window
+- Users can now hide their server from the server browser
+- Added Vote control window
+- Added 2 click install SourceMod/Metamod
+- Added support for .smx files
+- Added mod state toggle
+- Added mod add/remove button
+- Added button for checking mod commands
+- SMX files will automatically be scanned by server boss on startup
+- Added support for demo files
+- DEM files will automatically be scanned by server boss on startup
+- Added demo play button
+- Added scan for demos button 
+- Added delete demo button
+- Added support for automatic server updates
+- Added create desktop shortcut button
+- Added support for hosting server on windows startup
+- Added support for restarting server if it crashes(checks every 30 seconds)
+- Added support for automatically setting max players to 32 for mvm maps
+- Server Boss can now check for new updates on github and warn the user
+- User can now choose between launching 32/64 bit version servers
+- Added context menu items for .bsp, .smx, .dem, .jpg, .bmp, .png, .zip files(requires server boss to be launched as administrator and the add context menu items button in config tab to be pressed)
+- Server Boss can now host a server using tf2 
+- Added automatic scan for tf_win64.exe button
+
+Changes:
+- rcon password is now replaced with server password
+- rcon password is now moved to advanced window
+- Server Boss will now create cfg file for server startup instead of using a .bat file or cmd
+- Kick window is now replaced with fetch ip window
+- Buttons will now make their window active instead of being toggled
+- Console input prefix is now replaced with combobox
+
+Fixes:
+- Fixed showing non - bsp files in the map list
+- Fixed net_maxfilesize not being set to 64
